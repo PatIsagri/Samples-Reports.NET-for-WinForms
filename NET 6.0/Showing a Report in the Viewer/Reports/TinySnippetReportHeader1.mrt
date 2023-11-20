@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>ba62cb0e03de45ccb633601e0f8cec03</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="2" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <Text1 Ref="3" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,5.6,0.4</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="2" />
+          <Parent isRef="2" />
+          <Text>A piece of text in the TINY snippet header.</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>0fb1ff76294843689c7de758bf875ca3</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>2.5</PageHeight>
+      <PageWidth>10.5</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="9">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+    <value>GroupeIsa.Neos.Report.Stimulsoft.dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>TinySnippetReportHeader1</ReportAlias>
+  <ReportChanged>11/20/2023 9:45:22 AM</ReportChanged>
+  <ReportCreated>11/20/2023 9:45:22 AM</ReportCreated>
+  <ReportGuid>7fe1a96ad89b491a9f30bae382601294</ReportGuid>
+  <ReportName>TinySnippetReportHeader1</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2023.4.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class TinySnippetReportHeader1 : Stimulsoft.Report.StiReport
+    {
+        public TinySnippetReportHeader1()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

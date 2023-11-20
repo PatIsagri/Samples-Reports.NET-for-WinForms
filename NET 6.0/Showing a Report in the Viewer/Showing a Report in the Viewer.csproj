@@ -12,7 +12,13 @@
     <PackageReference Include="Stimulsoft.Reports.Net" Version="2023.4.3" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="Reports\MasterReportWithSubReports3.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Reports\SimpleList.mrt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Reports\TinySnippetReportHeader1.mrt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

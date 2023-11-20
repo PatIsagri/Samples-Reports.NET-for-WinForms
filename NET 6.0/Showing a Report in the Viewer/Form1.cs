@@ -14,7 +14,7 @@ namespace Showing_a_Report_in_the_Viewer
 {
     public partial class Form1 : Form
     {
-        const string PathToMrtFile = @"Reports\SimpleList.mrt";
+        const string PathToMrtFile = @"Reports\MasterReportWithSubReports3.mrt";
 
         public Form1()
         {
@@ -51,8 +51,14 @@ namespace Showing_a_Report_in_the_Viewer
         private StiReport CreateFromMrtFile(string pathToMrtFile)
         {
             var report = new StiReport();
+            report.GetSubReport += new StiGetSubReportEventHandler(Report_GetSubReport);
             report.Load(pathToMrtFile);
             return report;
+        }
+
+        private void Report_GetSubReport(object sender, StiGetSubReportEventArgs e)
+        {
+            e.Report = CreateFromMrtFile(@"Reports\TinySnippetReportHeader1.mrt");
         }
     }
 }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Resources isList="true" count="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <Key>fc0e5a87e5fe4e9aac1ae50f459aa0bd</Key>
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="2" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="2">
+        <Text1 Ref="3" type="Text" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,5.2,5.6,0.6</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Font>Arial,8</Font>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text1</Name>
+          <Page isRef="2" />
+          <Parent isRef="2" />
+          <Text>A piece of text in the master report.</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+        </Text1>
+        <Placeholder__TechnicalDemos__TinySnippetReportHeader1 Ref="4" type="SubReport" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0,19,4</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <Expressions isList="true" count="0" />
+          <Name>Placeholder__TechnicalDemos__TinySnippetReportHeader1</Name>
+          <Page isRef="2" />
+          <Parameters isList="true" count="0" />
+          <Parent isRef="2" />
+        </Placeholder__TechnicalDemos__TinySnippetReportHeader1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Expressions isList="true" count="0" />
+      <Guid>618f1fc0547a47669ec5659a9b36ee7d</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+    </Page1>
+  </Pages>
+  <ReferencedAssemblies isList="true" count="9">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+    <value>GroupeIsa.Neos.Report.Stimulsoft.dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>MasterReportWithSubReports3</ReportAlias>
+  <ReportChanged>11/20/2023 9:59:14 AM</ReportChanged>
+  <ReportCreated>11/20/2023 9:59:14 AM</ReportCreated>
+  <ReportGuid>ebf236558c6e4ce09886443db44e8ca7</ReportGuid>
+  <ReportName>MasterReportWithSubReports3</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2023.4.1.0</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class MasterReportWithSubReports3 : Stimulsoft.Report.StiReport
+    {
+        public MasterReportWithSubReports3()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
