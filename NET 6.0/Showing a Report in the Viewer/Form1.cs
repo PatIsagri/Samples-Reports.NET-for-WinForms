@@ -1,4 +1,4 @@
-﻿using Stimulsoft.Report;
+using Stimulsoft.Report;
 using Stimulsoft.Report.Viewer;
 using System;
 using System.Collections.Generic;
@@ -14,28 +14,31 @@ namespace Showing_a_Report_in_the_Viewer
 {
     public partial class Form1 : Form
     {
+        const string PathToMrtFile = @"Reports\SimpleList.mrt";
+
         public Form1()
         {
             // How to Activate
             //Stimulsoft.Base.StiLicense.Key = "6vJhGtLLLz2GNviWmUTrhSqnO...";
             //Stimulsoft.Base.StiLicense.LoadFromFile("license.key");
             //Stimulsoft.Base.StiLicense.LoadFromStream(stream);
+            Stimulsoft.Base.StiLicense.Key = Environment.GetEnvironmentVariable("Reporting:StimulsoftLicenceKey");
 
             InitializeComponent();
         }
 
         private void buttonControl_Click(object sender, EventArgs e)
         {
-            var report = new StiReport();
-            report.Load(@"Reports\SimpleList.mrt");
+            StiReport report = CreateFromMrtFile(PathToMrtFile);
+
             report.Render();
             stiViewerControl1.Report = report;
         }
 
         private void buttonDialog_Click(object sender, EventArgs e)
         {
-            var report = new StiReport();
-            report.Load(@"Reports\SimpleList.mrt");
+            StiReport report = CreateFromMrtFile(PathToMrtFile);
+
             report.Show();
             //report.ShowWithRibbonGUI();
         }
@@ -43,6 +46,13 @@ namespace Showing_a_Report_in_the_Viewer
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private StiReport CreateFromMrtFile(string pathToMrtFile)
+        {
+            var report = new StiReport();
+            report.Load(pathToMrtFile);
+            return report;
         }
     }
 }
