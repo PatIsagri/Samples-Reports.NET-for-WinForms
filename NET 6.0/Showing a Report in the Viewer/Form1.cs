@@ -56,9 +56,12 @@ namespace Showing_a_Report_in_the_Viewer
             return report;
         }
 
-        private async void Report_GetSubReport(object sender, StiGetSubReportEventArgs e)
+        private void Report_GetSubReport(object sender, StiGetSubReportEventArgs e)
         {
-            await Task.Delay(1000);
+            var task = Task.Delay(1000);
+            task.Wait();
+
+            // + use task.Result to get the result of the task
 
             e.Report = CreateFromMrtFile(@"Reports\TinySnippetReportHeader1.mrt");
         }
